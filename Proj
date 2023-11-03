@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+// Function to get an integer from the user
+int get_int() {
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    return num;
+}
+
+// Function to get a float from the user
+float get_float() {
+    float num;
+    printf("Enter a float: ");
+    scanf("%f", &num);
+    return num;
+}
+
+int main() {
+    int int1, int2;
+    float float1, float2;
+    char name[100];
+
+    // Get input from the user
+    int1 = get_int();
+    int2 = get_int();
+    float1 = get_float();
+    float2 = get_float();
+
+    printf("Enter your name: ");
+    scanf("%s", name);
+
+    // Perform operations
+    int sum_int = int1 + int2;
+    float sum_float = float1 + float2;
+const char* result;
+if (sum_int == 0 && sum_float == 0.0) {
+    result = "correct";
+} else {
+    result = "incorrect";
+}
+
+
+    // Display results
+    printf("Hello, %s!\n", name);
+    printf("Result is %s\n", result);
+
+    return 0;
+}
