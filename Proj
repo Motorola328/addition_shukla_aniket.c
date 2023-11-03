@@ -34,12 +34,11 @@ int main() {
     int sum_int = int1 + int2;
     float sum_float = float1 + float2;
 const char* result;
-if (sum_int == 0 && sum_float == 0.0) {
+if (sum_int == int1 + int2 && sum_float == float1 + float2) {
     result = "correct";
 } else {
     result = "incorrect";
 }
-
 
     // Display results
     printf("Hello, %s!\n", name);
